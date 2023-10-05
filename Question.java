@@ -1,7 +1,7 @@
 import java.util.*;
 
 abstract class Question {
-    protected List<String> candidateAnswersPrompt = new ArrayList<>();
+    protected final List<String> candidateAnswersPrompt = new ArrayList<>();
     protected List<Integer> candidateAnswers = new ArrayList<>();
     protected Set<Integer> answer;
 

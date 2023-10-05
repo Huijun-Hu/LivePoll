@@ -1,8 +1,8 @@
 import java.util.*;
 
 public class Course {
-    private int courseID;
-    private int studentNum;
+    private final int courseID;
+    private final int studentNum;
     private List<Student> studentList = new ArrayList<>();
 
 

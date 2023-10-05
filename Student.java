@@ -1,7 +1,7 @@
 import java.lang.Math;
 
 public class Student {
-    private int studentID;
+    private final int studentID;
 
     public Student(){
         this.studentID = (int)(Math.random()*100000000);

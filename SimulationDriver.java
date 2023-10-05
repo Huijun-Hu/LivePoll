@@ -1,5 +1,5 @@
 import java.util.*;
-public class SimupationDriver {
+public class SimulationDriver {
     public static void main(String[] args) {
         int questionType1 = 1;
         int questionType2 = 0;
@@ -55,8 +55,5 @@ public class SimupationDriver {
         System.out.println("\n---[CS4080]Live Poll---");
         poll3.output();
         System.out.println("-----------------------");
-
-
-
     }
 }

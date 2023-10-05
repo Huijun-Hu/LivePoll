@@ -2,7 +2,7 @@ import java.util.*;
 
 public class VotingService{
 
-    private Question question;
+    private final Question question;
     private int correctAnswer;
     private Dictionary<Student,Set<Integer>> StudentEntry = new Hashtable<>();
     private Dictionary<Integer,Integer> statistics = new Hashtable<>();   
