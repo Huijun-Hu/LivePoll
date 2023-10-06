@@ -1,7 +1,12 @@
 import java.util.*;
+
+/**
+ * This class inherited Object Question
+ * @author Huijun Hu
+ * @version 1.0
+ */
+
 class SingleChoiceQuestion extends Question{
-    
-    //private Set<Integer> answer;
 
     public SingleChoiceQuestion(String[] ans){
         super(ans);

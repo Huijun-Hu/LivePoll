@@ -3,6 +3,7 @@ import java.util.*;
 /**
  * This standard class automatically simulate the whole Live Poll process
  * @author Huijun Hu
+ * @version 1.0
  */
 
 public class SimulationDriver {

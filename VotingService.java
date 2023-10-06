@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * This standard class instantiate Object VotingService which contains vary functionality to implement a Live Poll
+ * @author Huijun Hu
+ * @version 1.0
+ */
+
 public class VotingService{
 
     private final Question question;

@@ -1,5 +1,11 @@
 import java.lang.Math;
 
+/**
+ * This standard class instantiate Object Student
+ * @author Huijun Hu
+ * @version 1.0
+ */
+
 public class Student {
     private final int studentID;
 

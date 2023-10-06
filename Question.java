@@ -3,6 +3,7 @@ import java.util.*;
 /**
  * This abstract class instantiate Object Question
  * @author Huijun Hu
+ * @version 1.0
  */
 
 abstract class Question {

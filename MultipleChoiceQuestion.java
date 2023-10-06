@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * This class inherited Object Question
+ * @author Huijun Hu
+ * @version 1.0
+ */
+
 class MultipleChoiceQuestion extends Question{
     
     public MultipleChoiceQuestion(String[] ans){
