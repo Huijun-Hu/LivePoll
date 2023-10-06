@@ -11,10 +11,13 @@ public class VotingService{
 
     private final Question question;
     private int correctAnswer;
-    private Dictionary<Student,Set<Integer>> StudentEntry = new Hashtable<>();
-    private Dictionary<Integer,Integer> statistics = new Hashtable<>();   
+    private Dictionary<Student,Set<Integer>> StudentEntry;
+    private Dictionary<Integer,Integer> statistics;   
 
     public VotingService(int questionType, String[] answers){
+        StudentEntry = new Hashtable<>();
+        statistics = new Hashtable<>();
+        
         if (questionType==0){
             question = new SingleChoiceQuestion(answers);
         }else{
@@ -23,10 +26,6 @@ public class VotingService{
         for (int i = 0; i<answers.length; i++){
             statistics.put(i,0);
         }   
-    }
-
-    public void setStudentNum(int studentNum){
-
     }
 
     // imitate student answering the question by simulate random answer
