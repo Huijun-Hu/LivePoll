@@ -8,11 +8,13 @@ import java.util.*;
  */
 
 abstract class Question {
-    protected final List<String> candidateAnswersPrompt = new ArrayList<>();
-    protected List<Integer> candidateAnswers = new ArrayList<>();
+    protected final List<String> candidateAnswersPrompt;
+    protected List<Integer> candidateAnswers;
     protected Set<Integer> answer;
 
     public Question(String[] ans){
+        candidateAnswersPrompt = new ArrayList<>();
+        candidateAnswers = new ArrayList<>();
         for (int i = 0; i < ans.length; i++){
             this.candidateAnswersPrompt.add(ans[i]);
             this.candidateAnswers.add(i);
