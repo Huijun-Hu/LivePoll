@@ -1,10 +1,15 @@
 import java.util.*;
+
+/**
+ * This standard class automatically simulate the whole Live Poll process
+ * @author Huijun Hu
+ */
+
 public class SimulationDriver {
     public static void main(String[] args) {
         int questionType1 = 1;
         int questionType2 = 0;
         int questionType3 = 0;
-
         int studentNum;
 
         String[] a1 = { "A" , "B" , "C" , "D" , "E" };
@@ -26,6 +31,7 @@ public class SimulationDriver {
         Iterator<Student> studentIn4750 = cs4750.getStudentList().iterator();
         Iterator<Student> studentIn4080 = cs4080.getStudentList().iterator();
 
+        // Test Multiple Choice Question Poll
         while(studentIn3560.hasNext()){
             studentIn3560.next().submitAnswer(poll1);
         }
@@ -33,7 +39,7 @@ public class SimulationDriver {
         poll1.output();
         System.out.println("-----------------------");
 
-
+        // Test Single Choice Question Poll
         while(studentIn4750.hasNext()){
             studentIn4750.next().submitAnswer(poll2);
         }
@@ -52,6 +58,7 @@ public class SimulationDriver {
             s.submitAnswer(poll3);
             
         }
+
         System.out.println("\n---[CS4080]Live Poll---");
         poll3.output();
         System.out.println("-----------------------");

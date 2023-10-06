@@ -1,5 +1,10 @@
 import java.util.*;
 
+/**
+ * This abstract class instantiate Object Question
+ * @author Huijun Hu
+ */
+
 abstract class Question {
     protected final List<String> candidateAnswersPrompt = new ArrayList<>();
     protected List<Integer> candidateAnswers = new ArrayList<>();
