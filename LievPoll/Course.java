@@ -10,11 +10,12 @@ import java.util.*;
 public class Course {
     private final int courseID;
     private final int studentNum;
-    private List<Student> studentList = new ArrayList<>();
+    private List<Student> studentList;
 
     public Course(int courseID, int studentNum){
         this.courseID = courseID;
         this.studentNum = studentNum;
+        studentList = = new ArrayList<>();
         for (int i=0; i<studentNum; i++){
             this.studentList.add(new Student());
         }
